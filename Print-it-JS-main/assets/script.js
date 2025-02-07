@@ -46,7 +46,6 @@ buttonPrev.addEventListener("click", () => {
 });
 
 for (let i = 0; i < dots.length; i++) {
-  // créer bouton
   dots[i].addEventListener("click", () => {
     index = i;
     slide.src = `./assets/images/slideshow/${slides[index].image}`;
@@ -64,19 +63,3 @@ function updatesDots() {
     }
   });
 }
-
-// function changeSlide(index) {
-//   slide.src = `./assets/images/slideshow/${slides[index].image}`;
-//   tagline.innerHTML = slides[index].tagLine;
-//   dots.forEach((dot, i) => dot.classList.toggle("dot_selected", index === i));
-// }
-
-// buttonNext.addEventListener("click", () => {
-//   index = (index + 1) % slides.length;
-//   changeSlide(index);
-// });
-
-// buttonPrev.addEventListener("click", () => {
-//   index = (index - 1 + slides.length) % slides.length;
-//   changeSlide(index);
-// });
